@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@700&family=Roboto:wght@400;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+body {
+  background: var(--Off-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main{
+    background: var(--White);
+    width: 600px;
+    border-radius: 1rem 1rem 10rem 1rem ;
+    margin: 2rem;
+}
+
+section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.form-container .flex-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container .flex-box label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--Smokey-grey);
+}
+
+input {
+  width: 100px;
+  padding: 0.5rem;
+  border: 2px solid var(--Light-grey);
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+input::placeholder {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--Light-grey);
+}
+
+input:focus {
+  border: 2px solid var(--Purple);
+}
+
+.sunmit-box {
+  display: flex;
+  align-items: center;
+}
+
+.sunmit-box hr {
+  width: 100%;
+  border: 1px solid var(--Light-grey);
+}
+
+.sunmit-box .btn-submit {
+  border-radius: 50%;
+  border: none;
+  padding: 1rem;
+  background: var(--Purple);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sunmit-box .btn-submit:hover {
+  background: var(--Off-black);
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.output h1 {
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.output span {
+  color: var(--Purple);
+}
+
+small {
+  margin: 0 auto;
+  display: block;
+  color: red;
+}
